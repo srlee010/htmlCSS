@@ -1,0 +1,66 @@
+/* class selector 를 자주 사용하게 됨 */
+.profile {
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;"
+}
+
+.name {
+  text-align: center;
+}
+
+
+/* tag selector는 해당 tag에 전체 적용*/
+h2 {
+  text-align: center;
+}
+
+/* id selector는 요즘 잘 사용하지 않는다 */
+#special {
+  color: blue;
+  font-weight: 600;
+}
+
+/*셀렉터의 우선순위
+style="" (1000점)
+#id (100점)
+.class (10점) 
+p (1점) 
+*/
+
+.box {
+  width: 250px ;
+  height: 180px;
+  background-color: cadetblue;
+  margin: 30px;
+  padding: 30px 50px;
+  border-radius: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  line-height: 2; 
+  font-size: 12px; 
+  font-weight: 400;
+  color: white;
+  box-shadow: 4px 4px black;
+
+}
+  /* 
+  <div>, <p>, <h>, <li> 특징: display:block; 속성을 이미 가지고 있기 때문에 생략해도 됨 
+  display: block; 하나의 가로행을 전부 차지하는 속성임
+  만약 이게 싫다면, 
+  display: inline, inline-block, flex 등 여러가지 다른걸 사용
+  */
+
+
+
+  /*
+[inherit  상속되는 속성들 - 주로 글자 관련] 
+ font-size, color, font-family, text-align 이런 속성들은 부모 태그에 쥐어주면 거기 안에 있던 태그들까지 전부 상속됩니다. 
+
+안에 글자들이나 태그들이 많을 경우 전부 font-size를 작성안해도 부모태그에 한번에 작성하고 끝낼 수 있으니 편리합니다. 
+*/}

@@ -1,0 +1,68 @@
+
+body {
+  font-family: 'Nanum Myeongjo', serif;s
+}
+
+.container {
+  width: 800px;
+}
+/* 
+float 속성으로 가로정렬할 땐 float 박스들을 싸매는 하나의 큰 div 박스를 만들고 폭을 지정해주는게 좋습니다. 보통 container로 적용.
+*/
+
+.header {
+  width: 100%;  /* 800px과 동의 (%는 부모태그의 100%)
+  - 상위 부모 태그 width의 100%로 설정하라는 의미 */
+  height: 50px;
+  background: aquamarine;
+}
+
+.left-menu {
+  width: 20%; 
+  /* 부모 800px의 30% = 240px */
+  height: 400px;
+  background: cornflowerblue;
+  /* float: left; */
+  /* 
+  float 속성 = 해당 요소를 붕 띄워서 왼쪽으로 정렬해주세요 
+  (박스들을 가로배치할 때 float 사용)
+  : float를 쓰고 나면 그 다음 HTML 요소들이 제자리를 찾지 못하기 때문에 항상 clear: both; 속성이 필요합니다.
+  */
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+/* 
+모든 <div>는 display: block속성을 가짐
+(가로 행을 전부 차지함)
+*/
+.content {
+  width: 80%;
+  height: 400px;
+  background: coral;
+  /* float: right; */
+  display: inline-block;
+}
+
+/* 
+display:block 한 행을 전부 차지
+display: inline-block 내 크기만큼 차지
+*/
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background: grey;
+  /* clear: both; */
+  /* 
+  footer가 안보이는 이유? 
+  이유: float가 적용되어있어서 왼쪽정렬됨
+  float속성을 쓰면 다음에 오는 속성에게 무조건 사용해야함
+  ⭐️해결: float 다음에 오는 요소에게 clear: both; 적용하면 이상한 현상 해결가능.
+}*/}
+
+
+ /* 설치가 안된 폰트는 어떻게 보여줄 수 있을까? 
+ google webfont활용하기
+  */

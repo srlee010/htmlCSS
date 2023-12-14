@@ -1,0 +1,60 @@
+/* tag selector: CSS에서는 주로 사용 */
+.profile {
+width: 100px; 
+display: block; 
+margin-left: auto; 
+margin-right: auto;
+}
+
+.name {
+letter-spacing: 2px; 
+text-align: center;
+}
+
+.job {
+letter-spacing: 3px; 
+text-align: center; 
+font-weight: 900;"
+}
+
+
+/* tag selector */
+p {
+  text-align: center;
+}
+
+
+/* id selecter: 잘 쓰지 않음 js에서 주사용 */
+#special {
+  color: gray;
+}
+
+.content {
+color: blue;
+
+}
+
+/* 셀렉터의 우선순위 기억하기 
+style="" (1000점)
+#id (100점)
+.class (10점) 
+p (1점)
+*/
+
+.box {
+  width: 100px;
+  background-color: #C0F8ED;
+  margin: 10px;
+  padding: 30px;
+  border: 1px solid rgb(190, 240, 190);
+  border-radius: 15px;
+  /* 가로행 전부 차지해주셈 */
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 12px;
+  box-shadow: 2px 2px gray;
+}
+
+/* inherit 지원하는 스타일? 여러속성들을 한번에 모두 적용하고 싶은 것들이 있으면 inherit스타일 사용하면 된다 
+ex) font-size, font-family, color등*/}

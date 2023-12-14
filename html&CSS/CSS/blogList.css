@@ -1,0 +1,62 @@
+.container {
+  width: 700px;
+  height: 200px;
+  /* background-color: gray; */
+}
+
+.textbox {
+  width: 70%;
+  height: 100%;
+  /* background-color: red; */
+  float: left;
+}
+
+.profile {
+  width: 100%;
+  height: 25%;
+  /* background-color: green; */
+}
+
+
+.profileImage {
+  width: 35px;
+  padding: 10px;
+  float: left;
+  
+}
+
+.nickname {
+  display: inline-block;
+  color: gray;
+  vertical-align: top;
+}
+
+
+.content {
+  width: 90%;
+  height: 50%;
+  margin: 10px;
+  /* background-color: orange; */
+  font-family: 'Nanum Myeongjo'
+}
+
+h2 {
+  font-weight: 900;
+}
+
+.imagebox {
+  width: 30%;
+  height: 100%;
+  /* background-color: blue; */
+  float: right;
+}
+
+
+.img {
+  width: 90%;
+  height: 90%;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+
