@@ -98,4 +98,39 @@ body {
 } 
 
 
+form {
+  width: 600px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
 
+
+/* input이 많은데 개별적으로 다 선언해야하나? 놉! 
+-> selector 문법사용: input[속성명=속성값] */
+
+input {
+  padding: 10px;
+  font-size: 15px; 
+  border: 1px solid #6e6c6c;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* 모든 input인데 type이 submit인것만 적용하란 의미 */
+input[type=text] {
+  width: 100px;
+  padding: 10px;
+  font-size: 10px;
+  border-radius: 10px;
+  border: 2px solid #e88686;
+}
+
+button {
+  width: 100px;
+  padding: 10px;
+  font-size: 10px;
+  border-radius: 10px;
+  border: 2px solid #e88686;
+  background-color: #e88686;
+}
