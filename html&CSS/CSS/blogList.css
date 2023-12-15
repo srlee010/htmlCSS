@@ -1,6 +1,10 @@
 .container {
   width: 700px;
   height: 200px;
+  /* 가운데 정렬하고 싶다면? */
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
   /* background-color: gray; */
 }
 
@@ -19,16 +23,16 @@
 
 
 .profileImage {
-  width: 35px;
-  padding: 10px;
+  width: 50px;
+  margin: 10px;
   float: left;
   
 }
 
 .nickname {
-  display: inline-block;
-  color: gray;
-  vertical-align: top;
+color: gray;
+float: left;
+margin: 10px auto 5px auto;
 }
 
 
@@ -37,7 +41,8 @@
   height: 50%;
   margin: 10px;
   /* background-color: orange; */
-  font-family: 'Nanum Myeongjo'
+  font-family: 'Nanum Myeongjo';
+  clear: both;
 }
 
 h2 {
@@ -45,18 +50,19 @@ h2 {
 }
 
 .imagebox {
-  width: 30%;
-  height: 100%;
+  width: 200px;
+  height: 200px;
   /* background-color: blue; */
-  float: right;
+  float: left;
 }
 
 
 .img {
   width: 90%;
   height: 90%;
-  margin: 10px;
+  margin: 10px auto 30px auto;
   border-radius: 10px;
 }
+
 
 
