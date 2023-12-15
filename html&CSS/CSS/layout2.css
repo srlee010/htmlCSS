@@ -22,10 +22,11 @@
   text-align: center;
 }
 
-p {
+.sub-title {
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
+  font-weight: 300;
 }
 
 .main-button {
@@ -39,7 +40,6 @@ p {
    '내 원래 위치를 기준으로 이동하세요~' 의미 이걸 먼저 쓰면  
    1. 좌표이동가능
    2. 공중에 뜸
-
   position: relative;
   top: 10px;
   left: 400px;
@@ -57,4 +57,19 @@ p {
    margin-right: auto;
    margin-top: 50px;
    width: 150px;
+}
+
+.sub-content {
+  background-color: #e9e4e4;
+  position: relative;
+  top: 200px;
+  display: block;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 20px;
+}
+
+.sub-content h3 {
+  text-align: center;
+  padding-bottom: 10px;
 }
