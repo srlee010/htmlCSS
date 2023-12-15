@@ -6,27 +6,35 @@
     <link rel="stylesheet" href="../CSS/blogList.css">
   </head>
   <body>
+    <!-- nav는 div와 역할이 똑같은데 이름을 달리해서 가독성 높임-->
+    <nav>
+      <ul class="navbar">
+        <li><a href="#">영화</a></li>
+        <li><a href="#">맛집</a></li>
+        <li><a href="#">IT</a></li>
+        <li><a href="#">컴퓨터</a></li>
+      </ul>
+    </nav>
+
     <div class="container">
 
     <div class="textbox">
-
       <div class="profile"><div><img class="profileImage" src="../img/lion.png"></div>
-
       <!-- h와 p태그에는 기본적으로 마진이 있으므로 
       style="margin: 0"으로 바꿔줘야한다.-->
       <div class="nickname"><h4 style="margin: 8px;">이우리</h4><p style="margin: 8px;" font-size: 10px;">1시간 전</p>
       </div>  
-      
+      </div>
 
-    </div>
+    <!-- float 속성을 쓰면 공중에 붕뜨기때문에 다른 요소들은 겹치고 제자리를 못찾음. 
+      1.다음 오는 요소에게 "clear: both" 
+      2.여백을 주고자하는 위치에 가상의 div생성 후 clear:both 적용-->
+      <div style="clear: both"></div>
 
-    <!-- float 속성을 쓰면 붕뜨기때문에 다른 요소들은 겹치고 제자리를 못찾음. 해결책)다음 요소에게 
-    style= "clear: both" -->
       <div class="content">
         <h2>잠실 런던 베이글 뮤지엄 위치 웨이팅 포장 보관방법</h2>
         <p>여전히 핫한 그 곳 런던베이글뮤지엄 예전에 갓 오픈 했을 때 안국점과 도산점을 갔을때 이렇게 웨이팅이 길지 않았는데 웨이팅이 보통 아닙니다..</p>
       </div>
-
     </div>
 
     <div class="imagebox">
