@@ -1,3 +1,11 @@
+div {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
 .main-background {
   width: 100%;
   height: 500px;
@@ -59,17 +67,35 @@
    width: 150px;
 }
 
-.sub-content {
+/* self ver.
+  .explain-box {
   background-color: #e9e4e4;
   position: relative;
-  top: 200px;
+  top: -30px;
   display: block;
   margin-left: 200px;
   margin-right: 200px;
   padding: 20px;
-}
+} 
+*/
 
-.sub-content h3 {
+/*코딩애플 ver.*/
+.explain-box {
+  background-color: #eee;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
   text-align: center;
-  padding-bottom: 10px;
-}
+  position: relative;
+  top: -30px;
+  /* z-index
+  공중에 떠 있는 애들이 많으면
+  누가 맨 앞에 올 것인가?
+  z-index가 높을 수록 앞으로 다가온다, 낮을수록 뒤로 빠짐 */
+  z-index: 1;
+  /* ⭐️padding, border포함한 width값 설정하기 (모든 div에 설정해놓으면 편함) */
+  box-sizing: border-box;
+} 
+
+
+
