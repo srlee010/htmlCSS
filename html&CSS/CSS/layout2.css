@@ -6,6 +6,7 @@ body {
   margin: 0;
 }
 
+
 .main-background {
   width: 100%;
   height: 500px;
@@ -98,39 +99,96 @@ body {
 } 
 
 
-form {
-  width: 600px;
+.contact-background {
+  background-color: rgb(70, 69, 69);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 700px;
+  height: 600px;
+  position: relative;
+}
+
+.input-background {
+  background-color: white;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.input-container {
+  border: 1px solid gray;
+  width: 400px;
+  height: 400px;
+  margin: 50px;
+}
+
+.input-container h1 {
+  margin: 0;
+}
+
+
+/* form {
+  width: 400px;
   margin: auto;
   position: relative;
   text-align: center;
-}
-
+} */
 
 /* input이 많은데 개별적으로 다 선언해야하나? 놉! 
 -> selector 문법사용: input[속성명=속성값] */
 
-input {
-  padding: 10px;
-  font-size: 15px; 
-  border: 1px solid #6e6c6c;
-  border-radius: 10px;
-  text-align: center;
+
+/* 모든 input인데 type이 text인것만 적용하란 의미 */
+.input-container h3 {
+  margin-top: 15px;
+  margin-bottom: 3px;
 }
 
-/* 모든 input인데 type이 submit인것만 적용하란 의미 */
-input[type=text] {
-  width: 100px;
+input[type=email] {
+  width: 380px;
   padding: 10px;
   font-size: 10px;
-  border-radius: 10px;
-  border: 2px solid #e88686;
+  border-radius: 5px;
+  border: 1px solid #b3acac;
+}
+
+input[type=name] {
+  width: 120px;
+  padding: 10px;
+  font-size: 10px;
+  border-radius: 5px;
+  border: 1px solid #b3acac;
+  display: inline-block;
+}
+
+input[type=message] {
+  width: 380px;
+  height: 30px;
+  padding: 10px;
+  font-size: 10px;
+  border-radius: 5px;
+  border: 1px solid #b3acac;
+  display: inline-block;
 }
 
 button {
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
   width: 100px;
   padding: 10px;
-  font-size: 10px;
-  border-radius: 10px;
-  border: 2px solid #e88686;
-  background-color: #e88686;
+  border-radius: 5px;
+  border-style: none;
+  background: orange;
 }
+
