@@ -2,8 +2,22 @@ div {
   box-sizing: border-box;
 }
 
+/* input {
+  box-sizing: border-box;
+} */
+
+/* selector에서 콤마(,)쓰면 중복선택가능 */
+div, input, textarea {
+  box-sizing : border-box;
+}
+
+
 body {
   margin: 0;
+}
+
+html {
+  line-height : 1.15; /*기본 행간 높이*/
 }
 
 
@@ -192,28 +206,20 @@ h3 {
 }
 
 .firstName {
-  display: inline-block;
+  /* inline-block is ignored due to the float. If 'float' has a value other than 'none', the box is floated and 'display' is treated as 'block' */
+  /* display: inline-block; */
   float: left;
 }
 
 .lastName {
-  display: inline-block;
+  /* display: inline-block; */
   float: right;
 }
 
-.subscribe p {
-  display: inline-block;
-  margin: 5px;
-  text-align: center;
-  font-size: 15px;
-}
 
 
-button {
+.orange-button {
   color: white;
-  font-weight: 700;
-  font-size: 40px;
-  width: 100px;
   padding: 10px;
   border-radius: 3px;
   border-style: none;

@@ -29,23 +29,21 @@
 <div class="contact-background">
   <div class="input-background">
     <div class="input-container">
-      <h1>Contact us</h1>
+      
       <form>
-
+      <h1>Contact us</h1>
       <h3>Your Email</h3>
       <input type="email" placeholder="email@example.com" name="email">
       
-
-      
       <div class="firstName">
       <h3>First Name</h3>
-      <input type="name"></div>
-      
+      <input type="name">
+      </div>
  
       <div class="lastName">
       <h3>Last Name</h3>
-      <input type="name"></div>
-  
+      <input type="name">
+      </div>
   
       <div style="clear: both;"></div>
 
@@ -56,19 +54,38 @@
 
       <h3></h3> <!--여백주기용-->
 
-      <div class="subscribe">
+      <!-- A. 내가 작성한 구독버튼 영역 
+      
+        <div class="subscribe">
       <input type="checkbox"><p>Subscribe</p><button>SEND</button>
-      </div>
+      </div> 
+    
+    -->
 
-     
+    <!-- B. 코딩애플이 작성한 구독버튼 영역 
+        form, input 관련 제목 텍스트로 주로 <label> 태그 사용함.
+        id, for 사용한 경우 label 누르면 input도 누른걸로 간주해줌!
+        (input의 id, label의 for 속성을 똑같이 맞춰주면 됩니다)
+    -->
+    <div>
+      <input id="sub" type="checkbox">
+      <label for="sub">Subscribe</label>
+      <button class="orange-button">SEND</button>
+    </div>
+
+
     </form>
     </div>
     
-  
   </div>
 </div>
 
-
-
 </body>
 </html>
+
+<!-- 
+오늘 새로 배운 것들
+1. 셀렉터에 콤마쓰면 여러개 동시 선택 가능
+2. 재사용가능하게 class만들고 재사용 연습해보기 (실력향상)
+3.<label>유용함 input id="", label for="" -->
+
