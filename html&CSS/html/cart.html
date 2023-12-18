@@ -9,16 +9,21 @@
   
   <!-- 테이블 만들기
   1. div박스로 감싸주기
-  2. 행<tr>(가로)먼저 만들고(=tableRow), 
-  3. 열<td>(세로)만들기(=tableData>) 
-  + 제목용 열<td> 만들 땐 <th> 사용 
-  + 제목행은 <thead>안에 넣으면 좋음 (분류목적)
-  + 일반행은 <tbody>안에 넣으면 좋음 (분류목적)
-  + <table>은 기본적으로 셀간 틈이 존재하는데 없애려면
-    css파일에서 border-collapse: collapse
-  + vertical-align 속성 : 셀 안의 요소 상하정렬
-    "vertical-align: top / middle / bottom;"
-    목적: 
+
+  2. 행<tr>(가로)먼저 만들고(=tableRow),
+
+  3. 열<td>(세로)만들기(=tableData>)
+
+  4. 제목용 열<td>, 제목용 행 만들 땐 <th> 사용
+    - 제목행은 <thead>안에 넣으면 좋음 (분류목적)
+    - 일반행은 <tbody>안에 넣으면 좋음 (분류목적)
+    
+  5. <table>은 기본적으로 셀간 틈이 존재하는데 없애려면? 
+    - css파일에서 border-collapse: collapse
+
+  6. 셀 안의 요소들 상하정렬 하는 법: vertical-align 속성 사용
+    - table 셀 안 요소들을 세로정렬할 때 사용
+    - (table에선 top/middle/bottom 3개만 사용가능)
   -->
 
   <div>
