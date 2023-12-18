@@ -5,4 +5,65 @@
     <title>cart</title>
     <link href="../CSS/cart.css" rel="stylesheet">
   </head>
+  <body>
+  
+  <!-- 테이블 만들기
+  1. div박스로 감싸주기
+  2. 행<tr>(가로)먼저 만들고(=tableRow), 
+  3. 열<td>(세로)만들기(=tableData>) 
+  + 제목용 열<td> 만들 땐 <th> 사용 
+  + 제목행은 <thead>안에 넣으면 좋음 (분류목적)
+  + 일반행은 <tbody>안에 넣으면 좋음 (분류목적)
+  + <table>은 기본적으로 셀간 틈이 존재하는데 없애려면
+    css파일에서 border-collapse: collapse
+  + vertical-align 속성 : 셀 안의 요소 상하정렬
+    "vertical-align: top / middle / bottom;"
+    목적: 
+  -->
+
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <th><p>111</p><p>111</p></th>
+          <td style="vertical-align: top">222</td>
+          <td style="vertical-align: bottom;">333</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>111</th>
+          <td>222</td>
+          <td>333</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+<!-- 
+[vertical-align 속성]  
+글씨간 사이즈 차이가 발생하면 작은 글자의 위치 조정할 때 사용.
+(용도1) inline/inline-block요소 간의 상하 세로 정렬할 때 vertical-align 사용 
+-->
+
+
+<div>
+  <p style="font-size: 50px;">greeting<span style="font-size: 20px; vertical-align: bottom;">안녕</span></p>
+</div>
+
+
+<div> <img src="https://mdn.mozillademos.org/files/12245/frame_image.svg" width="32" height="32"> <span style="vertical-align: middle;">image with a default alignment.</span></div>
+
+
+<!-- 
+<table>에 만들때 사용하는 [vertical-align 속성]  
+(용도2) table 셀 안 요소들을 세로정렬할 때 사용.
+(table에선 top/middle/bottom 3개만 사용 가능)
+ -->
+
+
+
+  </body>
 </html>
