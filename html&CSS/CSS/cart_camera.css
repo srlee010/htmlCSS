@@ -65,17 +65,72 @@ a {
   text-decoration: none;
 }
 
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
 a:hover {
   color: green;
 }
 
 
-.footer button {
+.btn{
   padding: 10px;
   background-color: darkcyan;
   color: white;
   border-radius: 4px;
   border-style: none;
   float: right;
+  cursor: pointer;
 }
+
+/* pseudo-class란? 
+/* 적용 순서 매우 중요함 (h > f >a) 
+1) :hover
+2) :focus
+3) :active
+순서대로 넣어야 의도대로 잘 작동함!
+*/
+
+/* 버튼에 마우스를 올리면 어떤 스타일을 입힐건지 설정 가능 */
+.btn:hover {
+  background-color: chocolate;
+}
+
+/* 버튼에 마우스를 누르고 있을때 */
+.btn:active {
+  background-color: brown;
+}
+
+/*  클릭 후 계속 focus상태일 때 */
+.btn:focus {
+  background-color: blue;
+  border: 1px solid black;
+}
+
+.input-test {
+  font-size: 20px;
+}
+
+/* input창에 커서 올릴 때 */
+.input-test:focus {
+  border: 2px; solid: red
+}
+
+.custom-link {
+  text-decoration: none;
+}
+
+/* 방문 전 링크 스타일링은 :link */
+.custom-link:link {
+  color: green;
+}
+
+/* 방문 후 링크 스타일링은 :link */
+.custom-link:visited {
+  color:  black;
 }
