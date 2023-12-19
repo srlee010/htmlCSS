@@ -26,6 +26,7 @@ td, th {
   width: 100%;
   background-color: #c2d3de;
   padding: 30px;
+  height: 400px;
 }
 
 .cart-table {
@@ -36,8 +37,8 @@ td, th {
   border-radius: 10px;
 }
 
-/* .cart-table에 있는 모든 td, 모든 th 한번에 스타일링 해주세요 */
-.cart-table td, th {
+/* .cart-table에 있는 모든 td, 모든 th 한번에 스타일링 해주세요(정확히 써주기) */
+.cart-table td, .cart-table th {
   padding: 15px;
   border-bottom: 1px solid #ced3de;
 } 
@@ -52,4 +53,29 @@ td, th {
 /* .cart-table안에 있는 모든 th중에 두번째 th에게만 적용해주세요 */
 .cart-table th:nth-child(2) {
   width: 400px;
+}
+
+
+
+.footer {
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+}
+
+
+.footer button {
+  padding: 10px;
+  background-color: darkcyan;
+  color: white;
+  border-radius: 4px;
+  border-style: none;
+  float: right;
+}
 }
