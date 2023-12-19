@@ -4,69 +4,71 @@
     <meta charset="utf-8">
     <title>cart</title>
     <link href="../CSS/cart.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalnia&family=Nanum+Myeongjo&family=Roboto+Mono&display=swap" rel="stylesheet">
   </head>
   <body>
   
   <!-- 테이블 만들기
   1. div박스로 감싸주기
-
   2. 행<tr>(가로)먼저 만들고(=tableRow),
-
   3. 열<td>(세로)만들기(=tableData>)
-
   4. 제목용 열<td>, 제목용 행 만들 땐 <th> 사용
     - 제목행은 <thead>안에 넣으면 좋음 (분류목적)
     - 일반행은 <tbody>안에 넣으면 좋음 (분류목적)
-    
   5. <table>은 기본적으로 셀간 틈이 존재하는데 없애려면? 
     - css파일에서 border-collapse: collapse
-
   6. 셀 안의 요소들 상하정렬 하는 법: vertical-align 속성 사용
     - table 셀 안 요소들을 세로정렬할 때 사용
     - (table에선 top/middle/bottom 3개만 사용가능)
   -->
 
-  <div>
-    <table>
-      <thead>
+<div class="container">
+  <div class="background">
+    <table class="table">
+
+      <thead class="title">
         <tr>
-          <th><p>111</p><p>111</p></th>
-          <td style="vertical-align: top">222</td>
-          <td style="vertical-align: bottom;">333</td>
+          <th colspan="2">ITEM</th>
+          <th>AMOUNT</th>
+          <th>PRICE</th>
+          <th>TOTAL</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th>111</th>
-          <td>222</td>
-          <td>333</td>
+          <td><img src="../img/camera1.png" alt="" style="width: 30px"></td>
+          <td>
+            <div class="logo">
+            <img src="../img/sony-logo.png"><span>FE 70-200 mm F2.8 GM OSS</span>
+            </div>
+          </td>
+          <td><span class="amount">1</span></td>
+          <td><span>€ 1979.00</span></td>
+          <td class="totalAmount">€ 1979.00</td>
         </tr>
+        <tr>
+          <td><img src="../img/camera2.png" alt="" style="width: 30px"></td>
+          <td>
+            <div class="logo">
+              <img src="../img/sony-logo.png"><span>Sonnar T* E 24MM F1.8 ZA</span>
+            </div>
+          <div style="clear: both"></div>
+          </td>
+          <td><span class="amount">1</span></td>
+          <td><span>€ 989.00</span></td>
+          <td class="totalAmount">€ 989.00</td>
+        </tr>
+        <tr>
+          <td colspan="4"></td>
+          <td class="totalAmount">€ 2968.00</td>
+        </tr>
+
       </tbody>
     </table>
   </div>
-
-
-
-<!-- 
-[vertical-align 속성]  
-글씨간 사이즈 차이가 발생하면 작은 글자의 위치 조정할 때 사용.
-(용도1) inline/inline-block요소 간의 상하 세로 정렬할 때 vertical-align 사용 
--->
-
-
-<div>
-  <p style="font-size: 50px;">greeting<span style="font-size: 20px; vertical-align: bottom;">안녕</span></p>
 </div>
-
-
-<div> <img src="https://mdn.mozillademos.org/files/12245/frame_image.svg" width="32" height="32"> <span style="vertical-align: middle;">image with a default alignment.</span></div>
-
-
-<!-- 
-<table>에 만들때 사용하는 [vertical-align 속성]  
-(용도2) table 셀 안 요소들을 세로정렬할 때 사용.
-(table에선 top/middle/bottom 3개만 사용 가능)
- -->
 
 
 

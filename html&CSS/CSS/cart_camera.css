@@ -1,0 +1,55 @@
+div, input, textarea {
+  box-sizing : border-box;
+}
+
+body {
+  margin : 0;
+	padding: 0;
+}
+
+html {
+  line-height : 1.15; /*기본 행간 높이*/
+}
+
+table {
+  border-collapse: collapse;
+}
+/* 
+td, th {
+  border: 1px solid black;
+} */
+
+
+/* ------CSS Reset----- */
+
+.cart-backgrond {
+  width: 100%;
+  background-color: #c2d3de;
+  padding: 30px;
+}
+
+.cart-table {
+  width: 100% ;
+  max-width: 700px;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* .cart-table에 있는 모든 td, 모든 th 한번에 스타일링 해주세요 */
+.cart-table td, th {
+  padding: 15px;
+  border-bottom: 1px solid #ced3de;
+} 
+
+  /* td 폭 조정시 유의사항
+  해당 td에게 최대 이만큼 차지해보세요~ 라는 뜻, 한곳만 너비 설정해도 다른 셀도 같이 적용됨 */
+.cell-long {
+  width: 700px;  
+}
+
+/* 셀마다 간격 주기위해 클래스 만들기 귀찮다면 아래 방법으로 효율적인 코드 작성 가능 */
+/* .cart-table안에 있는 모든 th중에 두번째 th에게만 적용해주세요 */
+.cart-table th:nth-child(2) {
+  width: 400px;
+}

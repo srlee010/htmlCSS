@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>cart</title>
+    <link href="../CSS/cart_camera.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalnia&family=Nanum+Myeongjo&family=Roboto+Mono&display=swap" rel="stylesheet">
+  </head>
+  
+  <!-- 테이블 만들기
+  1. div박스로 감싸주기
+  2. 행<tr>(가로)먼저 만들고(=tableRow),
+  3. 열<td>(세로)만들기(=tableData>)
+  4. 제목용 열<td>, 제목용 행 만들 땐 <th> 사용
+    - 제목행은 <thead>안에 넣으면 좋음 (분류목적)
+    - 일반행은 <tbody>안에 넣으면 좋음 (분류목적)
+  5. <table>은 기본적으로 셀간 틈이 존재하는데 없애려면? 
+    - css파일에서 border-collapse: collapse
+  6. 셀 안의 요소들 상하정렬 하는 법: vertical-align 속성 사용
+    - table 셀 안 요소들을 세로정렬할 때 사용
+    - (table에선 top/middle/bottom 3개만 사용가능)
+  -->
+
+  <body>
+  
+<div class="cart-backgrond">
+  <h3>Your Shopping Cart</h3>
+  <!--4행 5열 필요-->
+  <table class="cart-table"> 
+    <thead>
+      <tr>
+        <td></td>
+        <th class="cell-long">ITEM</th>
+        <th>AMOUNT</th>
+        <th>PRICE</th>
+        <th>TOTAL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="../img/camera1.png" width="50px"></td>
+        <td>카메라</td>
+        <td>1</td>
+        <td>7000</td>
+        <td>7000</td>
+      </tr>
+      
+    </tbody>
+  
+
+
+    
+  </table>
+</div>
+
+
+  </body>
+</html>
