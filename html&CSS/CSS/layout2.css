@@ -247,15 +247,16 @@ h3 {
 }  */
 
 
-/* 내비게이션 바 만들기 */
+/* 내비게이션 바 스타일링 */
 
 .nav-container {
-  height: 20px;
+  height: 30px;
   background-color: #EE6B6B;
   display: flex;
   color: white;
   align-items: center;
   padding: 10px;
+  font-size: 20px;
 }
 
 .nav-item {
