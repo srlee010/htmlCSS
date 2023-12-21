@@ -55,8 +55,6 @@ td, th {
   width: 400px;
 }
 
-
-
 .footer {
   margin-top: 10px;
 }
@@ -130,7 +128,7 @@ a:hover {
   color: green;
 }
 
-/* 방문 후 링크 스타일링은 :link */
+/* 방문 후 링크 스타일링은 :visited */
 .custom-link:visited {
   color:  black;
 }
