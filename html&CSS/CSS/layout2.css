@@ -227,3 +227,36 @@ h3 {
   float: right;
 }
 
+
+/* 
+[flexbox 개념 공부] 
+.flexbox {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-item {
+  width: 100px;
+  height: 50px;
+  background-color: #EE6B6B;
+  border: 1px solid red;
+  margin: 0 auto;
+}  */
+
+
+/* 내비게이션 바 만들기 */
+.nav-container {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  padding: 5px;
+  background-color: #EE6b6b;
+  color: white;
+}
+
+.nav-item {
+  margin: 10px;
+}
