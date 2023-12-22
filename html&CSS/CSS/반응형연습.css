@@ -28,3 +28,55 @@ td, th {
 
 
 /*------------------------*/
+
+  /* 가로정렬하고 싶을때 사용 가능한것
+  1. display: inline-block;
+  2. float: left;
+  3. display: flex; */
+
+  .product-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+  }
+  
+  .product-container div {
+    float: left;
+    width: 20%;
+    text-align: center;
+    background-color: pink;
+    border-radius: 5px;
+    margin: 6px;
+    padding: 10px;
+  }
+  
+  
+/* 미디어 쿼리 문법은 항상 밑에 있어야 잘 작동됨 */
+@media screen and (max-width: 1200px){
+  .product-container {
+    max-width: 700px;
+  }
+  .product-container div {
+    width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  .product-container {
+    max-width: 400px;
+  }
+  .product-container div {
+    width: 70%;
+  }
+}
+
+
+/* @media screen and (max-width: 576px){
+  
+} */
+
+/* 부트스트랩을 쓰면 더 많은 미디어쿼리를 사용해서 반응형 컬럼을 더 많이 만들 수 있음 */
