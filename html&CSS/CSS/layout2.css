@@ -20,6 +20,14 @@ html {
   line-height : 1.15; /*기본 행간 높이*/
 }
 
+.test {
+  font-size: 10px;
+  width: 20em;
+  height: 50px;
+  background: rgb(28, 10, 10);
+}
+
+
 
 .main-background {
   width: 100%;
@@ -261,4 +269,42 @@ h3 {
 
 .nav-item {
   margin-right: 10px;
+  
+}
+
+
+/* 
+[반응형 웹 만드는 방법]
+미디어쿼리 문법을 사용해 반응형 만들기
+- class몇개 적든, 스타일 많이 넣던 모두 가능
+- 미디어쿼리도 여러개 사용 가능 (단, 큰 사이즈 → 작은 사이즈 순으로 작성)
+- 참고) breakpoint기준 px값은 다른사람들이 많이 하는걸 따라하는 걸 권장
+- '현재 브라우저 폭이 1200px이하일 경우, 하단 스타일링을 적용해주세요'라는 의미
+*/
+
+@media screen and (max-width: 1200px){
+  .main-title {
+    font-size: 30px;
+  }
+  .nav-item {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .main-title {
+    font-size: 10px;
+  }
+  .nav-item {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .main-title {
+    font-size: 5px;
+  }
+  .nav-item {
+    font-size: 3px;
+  }
 }
