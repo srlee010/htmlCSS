@@ -344,6 +344,7 @@ h3 {
   opacity: 0;    /* 시작스타일 */
   /* 위에 있는 스타일들이 변하면 1초동안 서서히 변경해주셈*/
   transition: all 0,5s;
+  /* transition-timing-function: cubic-bezier(0,1,0.48,1); */
 }
 
 .overlay:hover {
