@@ -1,0 +1,30 @@
+/* selector에서 콤마(,)쓰면 중복선택가능 
+ex) 태그나 클래스명도 콤마로 사용가능 div, input, .name */
+
+div, input, textarea {
+  box-sizing : border-box;
+}
+
+body {
+  margin : 0;
+	padding: 0;
+  font-family: gulim;
+  transform: rotate(0.03deg);
+}
+
+
+html {
+  line-height : 1.15; /*기본 행간 높이*/
+}
+
+table {
+  border-collapse: collapse;
+}
+
+
+td, th {
+  border: 1px solid black;
+}
+
+
+/*------------------------*/
