@@ -25,7 +25,44 @@ td, th {
   border: 1px solid black;
 }
 
-
-
 /*------------------------*/
 
+.main-background {
+  background-image: linear-gradient(to bottom, #499add, #4e61c0);
+  height: 550px;
+  padding: 20px;
+  color: white;
+}
+.main-container {
+  max-width: 1200px;
+  margin: auto;
+} 
+.main-text {
+  float: left;
+  margin-top: 50px;
+}
+.main-iphone {
+  width: 400px;
+  float: right;
+  margin-top: 95px;
+}
+
+.btn {
+  padding: 15px 20px;
+  font-size: 16px;
+  font-family: 'nanumsquare';
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-black {
+  background-color: #444444;
+  color: white;
+}
+
+.btn-black:hover {
+  background-color: pink;
+  color: black;
+}
